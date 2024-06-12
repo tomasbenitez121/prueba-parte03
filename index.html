@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+  <body>
+
+    <div class="pikachu">
+
+
+      <img src="assets/img/pikachu_cola.png" class="cola">
+      <img src="assets/img/pikachu_cuerpo.png" class="cuerpo">
+      <img src="assets/img/pikachu_boca.png" class="boca">
+      <img src="assets/img/pikachu_ojo 1.png" class="ojo1">
+      <img src="assets/img/pikachu_ojo 2.png" class="ojo2">
+      <img src="assets/img/pikachu_brazo 1.png" class="brazo1">
+      <img src="assets/img/pikachu_brazo 2.png" class="brazo2">
+
+
+    </div>
+
+<button id="click" class="btn btn-success">MUEVEME</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+          let cola = $('.cola');
+          let cuerpo = $('.cuerpo');
+          let ojo1 = $('.ojo1');
+          let ojo2 = $('.ojo2');
+          let boca = $('.boca');
+          let brazo1 = $('.brazo1');
+          let brazo2 = $('.brazo2');
+          let boton = $('.btn');
+
+          $(document).ready(function() {
+        let brazo2 = $('.brazo2');
+        let brazo1 = $('.brazo1');
+        let boton = $('#click');
+
+        boton.click(function() {
+            brazo1.css({
+                'transition': 'transform 1s',
+                'transform': 'rotate(-120deg)'
+            });
+
+            brazo2.css({
+                'transition': 'transform 1s',
+                'transform': 'rotate(120deg)'
+            });
+
+            setTimeout(function() {
+                brazo1.css('transform', 'rotate(0deg)');
+                brazo2.css('transform', 'rotate(0deg)');
+            }, 1000);
+        });
+    });
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,57 @@
+@import "../bootstrap-5.3.3/scss/bootstrap.scss";
+
+
+body {
+    background-image: url('../assets/img/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3840px 2160px;
+}
+
+
+.cola{
+    position: absolute;
+    top: 350px;
+    left: 890px;
+}
+
+.cuerpo{
+    position: absolute;
+    left: 400px;
+}
+
+.boca{
+    position: absolute;
+    top: 500px;
+    left: 675px;
+}
+
+.ojo1{
+    position: absolute;
+    top: 385px;
+    left: 620px;
+}
+
+.ojo2{
+    position: absolute;
+    top: 385px;
+    left: 800px;
+}
+
+.brazo1{
+    position: absolute;
+    top: 620px;
+    left: 605px;
+}
+
+.brazo2{
+    position: absolute;
+    top: 620px;
+    left: 780px;
+}
+
+.btn{
+    position: absolute;
+
+}
+
